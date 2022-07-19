@@ -1,6 +1,18 @@
 #include "sort.h"
 
 /**
+ * swap_array - swaps array elements
+ * @fir: first element
+ * @sec: second element
+ */
+void swap_array(int *fir, int *sec)
+{
+	int temp = *fir;
+	*fir = *sec;
+	*sec = temp;
+}
+
+/**
  * partition - partitions the array according to pivot
  *
  * @array: array to partition
