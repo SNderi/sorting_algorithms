@@ -13,12 +13,14 @@ void swap_array(int *fir, int *sec)
 }
 
 /**
- * partition - partitions the array according to pivot
+ * partition - finds the pivot index
  *
  * @array: array to partition
  * @low: Leftmost element
  * @high: Rightmost element
  * @size: Length of array
+ *
+ * Return: pivot final position
  */
 int partition(int *array, int low, int high, size_t size)
 {
