@@ -22,8 +22,10 @@ void swap_array(int *fir, int *sec)
 
 void selection_sort(int *array, size_t size)
 {
-	size_t i, j;
-	int pos;
+	size_t i, j, pos;
+
+	if (size < 2)
+		return;
 
 	for (i = 0; i < size - 1; i++)
 	{
@@ -34,6 +36,7 @@ void selection_sort(int *array, size_t size)
 				pos = j;
 		}
 		swap_array(&array[pos], &array[i]);
-		print_array(array, size);
+		if (i != pos)
+			print_array(array, size);
 	}
 }
