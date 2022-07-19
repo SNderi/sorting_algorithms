@@ -1,4 +1,16 @@
-#include "sort.c"
+#include "sort.h"
+
+/**
+ * swap_array - swaps array elements
+ * @fir: first element
+ * @sec: second element
+ */
+void swap_array(int *fir, int *sec)
+{
+	int temp = *fir;
+	*fir = *sec;
+	*sec = temp;
+}
 
 /**
  * selection_sort - sorts an array of integers in ascending order
